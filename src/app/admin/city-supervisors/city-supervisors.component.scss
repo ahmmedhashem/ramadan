@@ -1,0 +1,27 @@
+@import "../volunteers-report/volunteers-report.component.scss";
+
+.container{
+    .table{
+        overflow: hidden;
+        tr{
+            .check{
+                width: 5%;
+            }
+            .name{
+                width: 20%;
+            }
+            .last{
+                width: 20%;
+            }
+            .city{
+                width: 20%;
+            }
+            .status{
+                width: 15%;
+            }
+            .option{
+                width: 20%;
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+<div class="dashboard-container">
+    <div class="row">
+        <div class="col-md-3 side-bar">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="col-md-9 right-content">
+            <!-- Right Panel -->
+            <div id="right-panel" class="right-panel">
+                <app-navbar></app-navbar>
+                <app-breadcrumbs></app-breadcrumbs>
+                <div class="container">
+                    <div class="card text-center">
+                        <div class="card-header">
+                          <h3>EDIT HOME</h3>
+                          <div class="close" (click)="goback()">
+                              <span>x</span>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-bordered">
+                                <tr>
+                                    <td class="title">Banar</td>
+                                    <td class="data">
+                                        <div class="image">
+                                            <img src="../../../assets/images/homeimage.png" alt="english flag" width="100%" height="100%">
+                                            
+                                        </div>
+                                        <a class="deleteImage" href="#">Delete</a>
+                                        <input type="file" name="file" id="file" class="inputfile chooseImage" />
+                                        <label class="uploade-image" for="file"> <i class="fas fa-upload"></i>Choose a file</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="title">About Us Text</td>
+                                    <td class="data">
+                                         <!-- About us text in inglish-->
+                                         <img class="for-defintion-en" src="../../../assets/images/englishflag.png" width="45px" height="30px">
+                                         <div class="guide-en-message">Enter About Us Text In English</div>
+                                         <form>
+                                            <textarea  class="form-control about-text" name="p-text" placeholder="Enter The About Us Text In English"></textarea>
+                                         </form>
+                                         <!--About us text in arabic-->
+                                         <img class="for-defintion-ar" src="../../../assets/images/Arabic-Language-Flag.svg" width="45px" height="30px">
+                                         <div class="guide-ar-message">Enter About Us Text In Arabic</div>
+                                        <form>
+                                            <textarea  class="form-control about-text" name="p-text" placeholder="Enter The About Us Text In Arabic"></textarea>
+                                        </form> 
+                                    </td>
+                                </tr>
+                            </table>
+                          
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="#" class='btn btn-primary save-button'><i class="far fa-save"></i>Save</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

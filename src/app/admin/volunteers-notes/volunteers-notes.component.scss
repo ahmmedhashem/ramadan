@@ -1,0 +1,20 @@
+@import "../volunteers-report/volunteers-report.component.scss";
+
+.container{
+    .table{
+        tr{
+            .name{
+                text-align: left;
+                width: 30%;
+            }
+            .notes{
+                width: 70%;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 400;
+                color: $tableRowColor;
+            }
+        }
+    }
+}

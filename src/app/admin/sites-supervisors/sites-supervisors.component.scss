@@ -1,0 +1,19 @@
+@import "../volunteers-report/volunteers-report.component.scss";
+
+
+.container{
+    .table{
+        tr{
+            .name{
+                text-align: left;
+                width: 70%;
+            }
+            .w-place{
+                width: 30%;
+            }
+            .country-u-h4{
+                text-align: left;
+            }
+        }
+    }
+}

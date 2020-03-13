@@ -1,0 +1,82 @@
+<div class="dashboard-container">
+    <div class="row">
+        <div class="col-md-3 side-bar">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="col-md-9 right-content">
+            <!-- Right Panel -->
+            <div id="right-panel" class="right-panel">
+                <app-navbar></app-navbar>
+                <app-breadcrumbs></app-breadcrumbs>
+                <div class="container">
+                    <div class="card text-center">
+                        <div class="card-header">
+                          <h3>EDIT TERMS & CONDITIONS</h3>
+                          <div class="close" (click)="goback()">
+                              <span>x</span>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-bordered">
+                                <tr>
+                                    <td class="title">Header</td>
+                                    <td class="data">
+                                         <!-- About us text in inglish-->
+                                         <img class="for-defintion-en" src="../../../assets/images/englishflag.png" width="45px" height="30px">
+                                         <div class="guide-en-message">Enter Terms Header In English</div>
+                                         <form>
+                                            <textarea  class="form-control about-text" name="p-text" placeholder="Enter Terms Header In English"></textarea>
+                                         </form>
+                                         <!--About us text in arabic-->
+                                         <img class="for-defintion-ar" src="../../../assets/images/Arabic-Language-Flag.svg" width="45px" height="30px">
+                                         <div class="guide-ar-message">Enter Terms Header In Arabic</div>
+                                        <form>
+                                            <textarea  class="form-control about-text" name="p-text" placeholder="Enter Terms HeaderIn Arabic"></textarea>
+                                        </form> 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Content</td>
+                                    <td class="data">
+                                        <div class="cont">
+                                            <div class="list">
+                                                <!-- About us text in inglish-->
+                                                <div class="english">
+                                                   <img class="for-defintion-en" src="../../../assets/images/englishflag.png" width="45px" height="30px">
+                                                   <div class="guide-en-message">Enter About Us Text In English</div>
+                                                   <form>
+                                                       <textarea  class="form-control about-text" name="p-text" placeholder="Enter The About Us Text In English"></textarea>
+                                                   </form>
+                                                </div>
+                                               
+                                               <!--About us text in arabic-->
+                                               <div class="arabic">
+                                                   <img class="for-defintion-ar" src="../../../assets/images/Arabic-Language-Flag.svg" width="45px" height="30px">
+                                                   <div class="guide-ar-message">Enter About Us Text In Arabic</div>
+                                                   <form>
+                                                       <textarea  class="form-control about-text" name="p-text" placeholder="Enter The About Us Text In Arabic"></textarea>
+                                                   </form> 
+                                               </div>
+                                            </div>
+                                        </div>
+                                         <button class="btn add-list" (click)="addList()">
+                                            <i class="fas fa-plus"></i>
+                                         </button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="#" class='btn btn-primary save-button'><i class="far fa-save"></i>Save</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

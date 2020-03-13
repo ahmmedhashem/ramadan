@@ -1,0 +1,73 @@
+<div class="dashboard-container">
+    <div class="row">
+        <div class="col-md-3 side-bar">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="col-md-9 right-content">
+            <!-- Right Panel -->
+            <div id="right-panel" class="right-panel">
+                <app-navbar></app-navbar>
+                <app-breadcrumbs></app-breadcrumbs>
+                <div class="container">
+                    <div class="card text-center">
+                        <div class="card-header">
+                          <h3>ATTENDANCE RECORDING</h3>
+                          <div class="close" (click)="goback()">
+                              <span>x</span>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-bordered">
+                                <tr>
+                                    <td class="title">Place Name</td>
+                                    <td class="data">The Name Of Place</td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Day</td>
+                                    <td class="data">1 <span>Ramadan</span></td>
+                                </tr>
+                            </table>
+                          
+                        </div>
+                        <div class="card-footer text-muted">
+                         
+                            <div class="table-responsive">
+                                <table class="main-table mange-member table table-bordered text-center" BORDERCOLOR=RED>
+                                    <tr>
+                                        <td class="id">ID</td>
+                                        <td class="name">Name</td>
+                                        <td class="present">Present</td>
+                                        <td class="absent">Absent</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        
+                                        <td class="id"> 
+                                            <span>1</span>
+                                        </td>
+                                        <td>
+                                            <h4 >Ahmed Saleh</h4>
+                                        </td>
+                                        <td>
+                                            <input  type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input  type="checkbox">
+                                        </td>
+                                        
+                                    </tr>		
+                                </table>
+                            </div>
+                            <a href="#" class='btn btn-primary save-button'><i class="far fa-save"></i>Save</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

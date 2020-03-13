@@ -1,0 +1,60 @@
+<div class="dashboard-container">
+    <div class="row">
+        <div class="col-md-3 side-bar">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="col-md-9 right-content">
+            <!-- Right Panel -->
+            <div id="right-panel" class="right-panel">
+                <app-navbar></app-navbar>
+                <app-breadcrumbs></app-breadcrumbs>
+                <div class="container">
+                    <ul class="navbar-nav text-right right admin-log fillter">  
+                        <li class="nav-item dropright text-right">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            All
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li>
+                                <i class="fas fa-user-tie"></i>
+                                <a class="dropdown-item" href="#">Supervisors</a>
+                              </li>
+                              <li>
+                                <i class="far fa-user"></i>
+                                <a class="dropdown-item" href="#">Volunteers</a>
+                              </li>  
+                          </div>
+                        </li>
+                    </ul> 
+                    <app-sup-search></app-sup-search>
+                    <div class="table-responsive">
+                        <table class="main-table mange-member table table-bordered text-center" BORDERCOLOR=RED>
+                            <tr>
+                                <td class="name">Name</td>
+                                <td class="w-place">Work Place</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="h4-intable">Ahmed Hashem Ali</h4> 
+                                    <h5 class="country-u-h4">United Arab Emirates</h5>
+                                   
+                                </td>
+                                <td>
+                                    <a href="#" routerLink='/SupervisorWorkPlace' class="edit-option">
+                                        <i class="far fa-edit"></i>Work Place
+                                    </a>
+                                </td>
+                          </tr>	
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

@@ -1,0 +1,21 @@
+@import "../../../styles.scss";
+@import "../attendance-by-person/attendance-by-person.component.scss";
+
+.container{
+    .table{
+        tr{
+            .name{
+                width: 30%;
+            }
+            .operation{
+                width: 25%;
+            }
+            .date{
+                width: 20%;
+            }
+            .role{
+                width: 25%;
+            }
+        }
+    }
+}

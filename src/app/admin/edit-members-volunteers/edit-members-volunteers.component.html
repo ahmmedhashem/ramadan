@@ -1,0 +1,164 @@
+<div class="dashboard-container">
+    <div class="row">
+        <div class="col-md-3 side-bar">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="col-md-9 right-content">
+            <!-- Right Panel -->
+            <div id="right-panel" class="right-panel">
+                <app-navbar></app-navbar>
+                <app-breadcrumbs></app-breadcrumbs>
+                <div class="container">
+                    <div class="card text-center">
+                        <div class="card-header">
+                          <h3>EDIT MEMBER</h3>
+                          <div class="close" (click)="goback()">
+                              <span>x</span>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-bordered">
+                                <tr>
+                                    <td class="title">Type</td>
+                                    <td class="data">
+                                        
+                                        <select>
+                                            <option>Individual</option>
+                                            <option>Family</option>
+                                            <option>Agency</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Password</td>
+                                    <td class="data">
+                                        <form>
+                                            <input type="password" class="form-control password" name="password" placeholder="Enter The Password">
+                                            <i class="show-pass fa fa-eye fa-2x"></i>
+                                        </form>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Full Name</td>
+                                    <td class="data">
+                                        <!-- full name in inglish-->
+                                        <img class="for-defintion-en" src="../../../assets/images/englishflag.png" width="45px" height="30px">
+                                        <div class="guide-en-message">Enter Full Name In English</div>
+                                        <form class="fullname">
+                                            <div class="row">
+                                                <div class="col section">
+                                                    <input type="text" name="first-name-en" class="form-control" placeholder="First name">
+                                                </div>
+                                                <div class="col section">
+                                                    <input type="text" name="second-name-en" class="form-control" placeholder="Second name">
+                                                </div>
+                                                <div class="col section">
+                                                    <input type="text" name="third-name-en" class="form-control" placeholder="Third name">
+                                                </div>
+                                                <div class="col section">
+                                                    <input type="text" name="last-name-en" class="form-control" placeholder="Last name">
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <!--full name in arabic-->
+                                        <img class="for-defintion-ar" src="../../../assets/images/Arabic-Language-Flag.svg" width="45px" height="30px">
+                                        <div class="guide-ar-message">Enter Full Name In Arabic</div>
+                                        <form class="fullname">
+                                            <div class="row">
+                                                <div class="col section">
+                                                    <input type="text" name="first-name-ar" class="form-control" placeholder="First name">
+                                                </div>
+                                                <div class="col section">
+                                                    <input type="text" name="second-name-ar" class="form-control" placeholder="Second name">
+                                                </div>
+                                                <div class="col section">
+                                                    <input type="text" name="third-name-ar" class="form-control" placeholder="Third name">
+                                                </div>
+                                                <div class="col section">
+                                                    <input type="text" name="last-name-ar" class="form-control" placeholder="Last name">
+                                                </div>
+                                            </div>
+                                        </form>  
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Phone Number</td>
+                                    <td class="data">
+                                        <input type="text" class="form-control phoneNom" name="phoneNumber" placeholder="Enter Phone Number">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Email</td>
+                                    <td class="data">
+                                        <input type="email" class="form-control email" name="email" placeholder="Enter Email">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Gender</td>
+                                    <td class="data">
+                                        <form class="gender">
+                                            <input  type="radio" id="male" name="gender" value="male">
+                                            <label for="male">Male</label>
+                                            <input  type="radio" id="female" name="gender" value="female">
+                                            <label for="female">female</label> 
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Nationality</td>
+                                    <td class="data">
+                                        <select class="form-control nationality">
+                                            <option>-- Nationality --</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Country</td>
+                                    <td class="data">
+                                        <select class="form-control country">
+                                            <option>-- Country --</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="title">News Letter?</td>
+                                    <td class="data">
+                                        <form class="newsletter">
+                                            <input  type="radio" id="yes" name="newsletter" value="yes">
+                                            <label for="yes">Yes</label>
+                                            <input  type="radio" id="no" name="newsletter" value="no">
+                                            <label for="no">No</label> 
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Notes</td>
+                                    <td class="data">
+                                        <form class="notes">
+                                            <textarea class="form-control" placeholder="Enter Notes...."></textarea>
+                                        </form>
+                                    </td>
+                                </tr>
+                            </table>
+                          
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="#" class='btn btn-primary save-button'><i class="far fa-save"></i>Save</a>
+                            <div class="member-login-info">
+                                <h5>Date : <span class="date">10-12-2019</span></h5>
+                                <h5>Last Login : <span class="last-time">14/06/2018 09:33 AM</span></h5>
+                                <h5>IP: <span class="ip"> 91.73.87.14</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

@@ -1,0 +1,72 @@
+<app-upperbar></app-upperbar>
+<app-u-navbar></app-u-navbar>
+
+<!--start profile page-->
+<div class="profile">
+    <div class="calender">
+        <div class="container">
+          <div class="contain">
+            <div class="calender-body">
+              <div class="container">
+                  <div class="head">
+                    <i class="far fa-calendar-alt"></i>
+                    <h2 class="h1">Ramadan Calender</h2>
+                  </div>
+                  <div class="username">
+                    <form>
+                        <div class="form-group">
+                            <label class="Registeration-lable" for="validationTooltip04">
+                                User Name : 
+                            </label>
+                            <select  required>
+                                <option selected disabled value="">Choose...</option>
+                                <option value="person">Person</option>
+                                <option value="family">Family</option>
+                                <option value="orgnization">Orgnization</option>
+                            </select>
+                        </div>
+                    </form>
+
+                  </div>
+                
+                <hr>
+                <div class="row text-center">
+                    <form class="days">
+                        
+                        <label title="" *ngFor="let day of days" for="inputCheck" class="select-day">
+                            <div class="cover"></div>
+                            <input type="checkbox" name="theday" class="theday" id="inputCheck" >
+                            <h4>{{day}}</h4>
+                            
+                        </label>
+                        <hr>
+                        <a href="#" class="btn">Save Changes</a>
+                    </form>
+                </div>  
+              </div>
+            </div>
+          </div>
+          <div class="notes">
+            <form>
+                <label>Notes :</label>
+                <textarea  placeholder="Enter Your Notes"></textarea>
+                <button class="btn">Send</button>
+            </form>
+        </div>  
+        </div>  
+       
+      </div>
+    
+    
+</div>
+<!--end profile page-->
+
+
+
+<!--start footer-->
+<app-footer></app-footer>
+<!--end footer-->
+
+<!--strat copyright-->
+<app-u-copyright></app-u-copyright>
+<!--end copyright-->

@@ -1,0 +1,150 @@
+@import "../volunteers-report/volunteers-report.component.scss";
+
+.container{
+    margin-top: 50px;
+    .table{
+        .check{
+            width: 5%;
+        }
+        .location{
+            width: 80%;
+            text-align: left;
+        }
+        .option{
+            width: 10%;
+        }
+        .dropdown{
+           
+            .main-country{
+                display: inline-block;
+                float: left;
+                cursor: pointer;
+                margin-bottom: 15px;
+                color: #000;
+                i{
+                    display: inline-block;
+                    font-size: 20px;
+                    margin-right: 5px;
+                }
+                .parent-h{
+                    display: inline-block;
+                    font-size: 20px; 
+                }
+            }
+            .parent-hr{
+                clear: both;
+                &:last-of-type{
+                    display: none;
+                }
+            }
+            .city-menue{
+                position: relative!important;
+                top: 0;
+                left: 0;
+                border: none;
+                transform: none!important;
+                width: 86%; 
+                margin: 0 40px;
+                .dropdown{
+                    padding: 8px 10px;
+                    position: relative;
+                    .child-status{
+                        float: right;
+                        background-color: #70a1ff;
+                        color: #FFF;
+                        font-size: 13px;
+                        font-weight: 500;
+                        padding: 4px 10px;
+                        border-radius: 15px;
+                        cursor: pointer;
+                        i{
+                            font-size: 11px;
+                            color: #FFF;
+                            margin-right: 3px;
+                        }
+                    }
+                    .clildren-hr{
+                        text-align: center;
+                        width: 100%;
+                        margin: 0;
+                        position: relative;
+                        top: 37px;
+                    }
+                    .main-city{
+                        h6{
+                            font-size: 14px;
+                            display: inline-block;
+                            color: $tableRowColor;
+                        }
+                        i{
+                            margin-right: 3px;
+                            color: $tableRowColor;
+                            font-size: 11px;
+                        }
+                    }
+                    .main-city::after{
+                        color: $tableRowColor;
+                    }
+                    .place-menue{
+                        position: relative!important;
+                        top: 0;
+                        left: 0;
+                        border: none;
+                        transform: none!important;
+                        width: 86%; 
+                        margin: 0 40px;
+                        .places{
+                            padding: 5px 10px;
+                            a{
+                                i{
+                                    margin-right: 3px;
+                                    color: $tableRowColor;
+                                    font-size: 11px;
+                                }
+                                h6{
+                                    font-size: 14px;
+                                    display: inline-block;
+                                    color: $tableRowColor;
+                                }
+                            }
+                            .grandson-status{
+                                float: right;
+                                background-color: #10ac84;
+                                color: #FFF;
+                                font-size: 13px;
+                                font-weight: 500;
+                                padding: 4px 10px;
+                                border-radius: 15px;
+                                cursor: pointer;
+                                i{
+                                    font-size: 11px;
+                                    color: #FFF;
+                                    margin-right: 3px;
+                                }
+                                
+                            }
+
+                        }
+                        .grandson-hr{
+                            text-align: center;
+                            width: 100%;
+                            margin: 0;
+                            position: relative;
+                            top: 0;
+                        }
+                    }
+
+                   
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

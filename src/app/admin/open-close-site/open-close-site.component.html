@@ -1,0 +1,62 @@
+<div class="dashboard-container">
+    <div class="row">
+        <div class="col-md-3 side-bar">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="col-md-9 right-content">
+            <!-- Right Panel -->
+            <div id="right-panel" class="right-panel">
+                <app-navbar></app-navbar>
+                <app-breadcrumbs></app-breadcrumbs>
+                <div class="container">
+                    <div class="card text-center">
+                        <div class="card-header">
+                          <h3>EDIT MEMBER</h3>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-bordered">
+                                <tr>
+                                    <td class="title">Site Status</td>
+                                    <td class="data">
+                                        <form class="gender">
+                                            <input  type="radio" id="open" name="Site-Status" value="open">
+                                            <label for="open">Open</label>
+                                            <input  type="radio" id="close" name="Site-Status" value="close">
+                                            <label for="close">Close</label> 
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                
+                                    <td class="title">Closed Message</td>
+                                    <td class="data">
+                                        <!-- full name in inglish-->
+                                        <img class="for-defintion-en" src="../../../assets/images/englishflag.png" width="45px" height="30px">
+                                        <div class="guide-en-message">Enter Message In English</div>
+                                        <form class="fullname">
+                                           <textarea class="form-control" name="closed-message-en" placeholder="Enter Message In English"></textarea>
+                                        </form>
+                                        <!--full name in arabic-->
+                                        <img class="for-defintion-ar" src="../../../assets/images/Arabic-Language-Flag.svg" width="45px" height="30px">
+                                        <div class="guide-ar-message">Enter Message In Arabic</div>
+                                        <form class="fullname">
+                                            <textarea class="form-control" name="closed-message-ar" placeholder="Enter Message In Arabic"></textarea>
+                                        </form>  
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="#" class='btn btn-primary save-button'><i class="far fa-save"></i>Save</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
